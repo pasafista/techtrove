@@ -1,4 +1,4 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -6,30 +6,151 @@
     list-style: none;
 }
 
-.logo{
+.logo {
     font-family: "DM Serif Display", serif;
     font-weight: 600;
     font-size: 2rem;
 }
 
-button{
+button {
     font-family: "DM Sans", sans-serif;
+    font-size: 1.2rem;
+    background-color: #15ff00;
+    color: black;
+    border: none;
+    border-radius: 25px;
+    outline: none;
+    padding: 0.6em 1em;
+    cursor: pointer;
+
 }
 
-main{
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.4em 1.2em 0 1.2em;
+}
+
+.left {
+    display: flex;
+    gap: 2em;
+    align-items: center;
+}
+
+.social {
+    display: flex;
+    font-size: 2rem;
+    gap: 2em;
+}
+
+.social div{
+    cursor: pointer;
+}
+
+.social div:hover{
+    transition: 0.8s;
+    transform: scale(2);
+    cursor: pointer;
+
+}
+
+main {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-h1{
-    font-size: 1rem;
-    font-weight: 300;
-    color: rgb(39, 38, 38);
+main div{
+    max-width: 50%;
 }
 
-h2{
+.timercon{
+    display: flex;
+    gap: 1em;
+    align-items: center;
+}
+
+.timer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+h1 {
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    font-weight: 400;
+    color: rgb(59, 59, 59);
+    gap: 1em;
+}
+
+h2 {
     font-family: "DM Serif Display", serif;
     font-weight: 700;
     font-size: 2.2rem;
+}
+
+p {
+    font-weight: 500;
+    margin-bottom: 1em;
+    margin-top: 0.5em;
+}
+
+.btn:hover{
+    transition: 0.2s;
+    transform: scale(1.1);
+}
+
+.yay {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #15ff00;
+    padding: 8px;
+    border: 1px solid #FFF;
+    border-radius: 18px;
+    box-shadow: 0 0 2px #888;
+    height: 30px;
+    width: 30px;
+}
+
+.yay:hover {
+    transition: 0.8s;
+    transform: scale(2);
+    cursor: pointer;
+}
+
+.email{
+    display: flex;
+    width: 40%;
+    margin-bottom: 1em;
+}
+
+.email input{
+    font-size: 2rem;
+    width: 100%;
+    border: 1px solid rgb(172, 172, 172);
+    outline: none;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    padding: 0.5em;
+}
+
+.email button{
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
 }
