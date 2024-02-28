@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="PLUTO BOY">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=DM+Serif+Display:ital@0;1&display=swap"
+        rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+    <title>TechTrove</title>
+</head>
+
+<body>
+    <nav>
+        <div class="logo">
+            TechTrove
+        </div>
+        <div>
+            <div><i class='bx bxl-twitter'></i></div>
+            <div><i class='bx bxl-instagram'></i></div>
+            <div><i class='bx bxl-telegram'></i></div>
+        </div>
+        <div>
+            <button class="btn"> <i class='bx bx-dollar-circle'></i> Donate </button>
+        </div>
+    </nav>
+
+    <main>
+        <div class="image-block">
+            <img src="Premium Photo _ Silver smartphone right side floating in white background.jpg" alt="">
+        </div>
+
+        <div class="text-block">
+            <h1>
+                Exciting News from TechTrove Solutions!
+            </h1>
+
+            <h2>
+                We're thrilled to announce our latest promotion: the TechTrove Free Phone Giveaway!
+            </h2>
+
+            <p>
+                Are you ready to upgrade your tech game without spending a dime? Here's your chance! We're giving away
+                cutting-edge smartphones to lucky winners like you!
+
+            <ul>
+                Participating is easy:
+                <li>
+                    1. Follow us on all our social media platforms.
+                </li>
+
+                <li>
+                    2. Like and share our giveaway posts.
+                </li>
+
+                <li>
+                    3. Tag your friends who would love to win a free phone too!
+                </li>
+            </ul>
+            </p>
+
+            <div>
+                <div class="timer">
+                    <div class="timer" id="daysTimer">
+                        00
+                    </div>
+                    <div class="biggie">
+                        Days
+                    </div>
+                </div>
+
+                <div class="timer">
+                    <div class="timer" id="hoursTimer">
+                        00
+                    </div>
+                    <div class="biggie">
+                        Hours
+                    </div>
+                </div>
+
+                <div class="timer">
+                    <div class="timer" id="minutesTimer">
+                        00
+                    </div>
+                    <div class="biggie">
+                        Minutes
+                    </div>
+                </div>
+
+                <div class="timer">
+                    <div class="timer" id="secondsTimer">
+                        00
+                    </div>
+                    <div class="biggie">
+                        Seconds
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>
+            The more you engage, the higher your chances of winning! Don't miss out on this incredible opportunity
+            to get your hands on the latest tech without spending a penny.
+
+            Stay tuned for updates and announcements on our social media channels. The giveaway starts soon, so get
+            ready to experience the magic of new technology with TechTrove Solutions!
+
+            Good luck to all participants!
+
+        </p>
+        <div class="email">
+            <input type="email" name="" placeholder=" Enter your email address">
+            <button type="submit" class="email_btn">Send</button>
+        </div>
+
+    </footer>
+
+    <script>
+        function startTimer() {
+            // Set the date we're counting down to
+            var countDownDate = new Date();
+            countDownDate.setDate(countDownDate.getDate() + 3); // adding 3 days
+
+            // Update the countdown every 1 second
+            var x = setInterval(function () {
+
+                // Get the current date and time
+                var now = new Date().getTime();
+
+                // Calculate the distance between now and the countdown date
+                var distance = countDownDate - now;
+
+                // Calculate days, hours, minutes, and seconds
+                var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+                // Display the result in the corresponding elements
+                document.getElementById("daysTimer").innerHTML = days;
+                document.getElementById("hoursTimer").innerHTML = hours;
+                document.getElementById("minutesTimer").innerHTML = minutes;
+                document.getElementById("secondsTimer").innerHTML = seconds;
+
+                // If the countdown is over, display a message and start a new timer
+                if (distance < 0) {
+                    clearInterval(x);
+                    document.getElementById("timer").innerHTML = "EXPIRED";
+                    // Restart the timer for the next three days
+                    startTimer();
+                }
+            }, 1000);
+        }
+
+        // Start the initial timer
+        startTimer();
+    </script>
+
+</body>
+
+</html>
