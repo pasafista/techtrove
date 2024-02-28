@@ -53,6 +53,10 @@ nav {
   cursor: pointer;
 }
 
+.social i{
+  font-size: clamp(1.3rem, 1rem);
+}
+
 .social div:hover {
   transition: 0.8s;
   transform: scale(2);
