@@ -184,11 +184,11 @@ p {
   }
 
   button:hover {
-    transform: none;
+    transform: scale(1);
   }
 
   scan:hover {
-    transform: none;
+    transform: scale(1);
   }
 }
 
