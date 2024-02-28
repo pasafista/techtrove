@@ -49,7 +49,7 @@ nav {
 }
 
 .social div {
-  font-size: clamp(1.5rem, 1rem);
+  font-size: clamp(1rem, 1rem);
   cursor: pointer;
 }
 
@@ -187,7 +187,7 @@ p {
     transform: scale(1);
   }
 
-  scan:hover {
+  span:hover {
     transform: scale(1);
   }
 }
